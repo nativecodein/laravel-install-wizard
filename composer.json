@@ -1,0 +1,79 @@
+{
+    "name": "nativecodein/laravel-install-wizard",
+    "description": "A modern, multilingual Laravel installation wizard — shadcn-style UI, light/dark/system theme, RTL support, and zero CDN runtime dependencies.",
+    "keywords": [
+        "laravel",
+        "laravel-installer",
+        "laravel-install-wizard",
+        "laravel-setup",
+        "laravel-setup-wizard",
+        "laravel-web-installer",
+        "laravel-package",
+        "install-wizard",
+        "setup-wizard",
+        "installation-wizard",
+        "installer",
+        "wizard",
+        "shadcn",
+        "shadcn-ui",
+        "multilingual",
+        "i18n",
+        "dark-mode",
+        "rtl"
+    ],
+    "homepage": "https://github.com/nativecodein/laravel-install-wizard",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "NativeCode",
+            "email": "oss@nativecode.in",
+            "homepage": "https://nativecode.in",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/nativecodein/laravel-install-wizard/issues",
+        "source": "https://github.com/nativecodein/laravel-install-wizard",
+        "docs":   "https://github.com/nativecodein/laravel-install-wizard#readme"
+    },
+    "require": {
+        "php": "^8.1",
+        "illuminate/contracts": "^10.0|^11.0|^12.0",
+        "illuminate/support": "^10.0|^11.0|^12.0",
+        "illuminate/http": "^10.0|^11.0|^12.0",
+        "illuminate/routing": "^10.0|^11.0|^12.0",
+        "illuminate/view": "^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "pestphp/pest": "^2.0|^3.0",
+        "phpunit/phpunit": "^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nativecodein\\LaravelInstallWizard\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Nativecodein\\LaravelInstallWizard\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nativecodein\\LaravelInstallWizard\\LaravelInstallWizardServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
